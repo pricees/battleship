@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Just add code!</title>
+
+  <script src="./app.js"></script>
+
+  <script src="./lib/ejs.js"></script>
+  <script src="./lib/jquery.js"></script>
+  <script src="./lib/underscore.js"></script>
+  <script src="./lib/backbone.js"></script>
+
+  <script src="./templates.js"></script>
+  <script src="./models.js"></script>
+  <script src="./views.js"></script>
+</head>
+
+<body>
+  <div id="content"></div>
+  <div id="board"></div>
+
+  <script>
+    var my_table = new App.Models.Table({});
+    var my_table_views = new App.Views.Table({ el: "#board", model: my_table });
+  </script>
+</body>
+</html>
